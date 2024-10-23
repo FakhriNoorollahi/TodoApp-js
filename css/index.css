@@ -1,0 +1,68 @@
+:root {
+  --bg-color: #191919;
+  --input-color: #292929;
+  --input-font: #fff;
+  --border-color: #f0e3ca;
+  --orange: #e3651d;
+  --red: #dc2626;
+  --green: #25b359;
+  --todo-color: #202020;
+}
+
+[data-theme="light"] {
+  --bg-color: #f9f3f3;
+  --input-color: #f7d9d9;
+  --input-font: #000;
+  --border-color: #4e4e4e;
+  --orange: #f25287;
+  --todo-color: #f9f3f3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg {
+  pointer-events: none;
+}
+
+button {
+  border: 0;
+  background-color: unset;
+  outline: 0;
+  cursor: pointer;
+}
+
+input {
+  border: 0;
+  background-color: unset;
+  outline: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  transition: background 0.3s ease-in;
+}
+
+.theme-mode {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.theme-mode button {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.theme-mode .dark {
+  background-color: #323232;
+  border: 1px solid var(--border-color);
+}
+
+.theme-mode .light {
+  background-color: #dddddd;
+}
